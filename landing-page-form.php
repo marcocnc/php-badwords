@@ -3,6 +3,8 @@
 $email = $_GET['email'];
 $password = $_GET['Password'];
 
+echo strlen( $password);
+
 ?>
 
 
@@ -25,7 +27,7 @@ $password = $_GET['Password'];
             
             
             <li>
-                <?php echo $password?>
+                <?php echo str_replace($password ,'***',$password); ?>
             </li>
         </ul>
     </div>
